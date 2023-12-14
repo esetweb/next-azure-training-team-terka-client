@@ -58,6 +58,7 @@ export default function Cart() {
         e.preventDefault();
         fetch('https://estore-team-terka-fa.azurewebsites.net/api/SubmitOrderHttpTrigger', {
             method: 'POST',
+            mode: 'no-cors',
             headers: {
               'Content-Type': 'application/json',
             },
