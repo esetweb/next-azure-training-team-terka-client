@@ -63,11 +63,11 @@ export default function Cart() {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({ 
-                socketId: socket.id, 
+                socket_id: socket.id, 
                 customer: customerData, 
                 order: { 
                     items: items, 
-                    totalPrice: calculatePrice() 
+                    total_price: calculatePrice() 
                 } 
             }),
           })
