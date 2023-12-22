@@ -56,7 +56,7 @@ export default function Cart() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        fetch('https://estore-team-terka-fa.azurewebsites.net/api/SubmitOrderHttpTrigger', {
+        fetch('https://estore-team-terka-dpr.mangobeach-2474d9e9.northeurope.azurecontainerapps.io/api/submit-order', {
             method: 'POST',
             mode: 'no-cors',
             headers: {
